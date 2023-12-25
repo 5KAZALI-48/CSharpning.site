@@ -1,0 +1,49 @@
+﻿@page
+@model CSharpning.com.WebApp.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Personal Projects";
+}
+
+<h3>@ViewData["Title"]</h3>
+<hr />
+
+<table class="table custom-table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Technologies Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Find nearest store</td>
+            <td>Complex service-oriented application that finds nearest store by using zipcode. </td>
+            <td>asp.net, xml, git, c#, restful services, encryption/hashing, google api.</td>
+            
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Avayne llc - instant corona virus hospital</td>
+            <td>Developed as a provisional hospital solution during disasters, this
+                application facilitates the procurement of medpod units and other essential supplies.
+                the primary objective is to attend to the medical requirements that arise during critical
+                circumstances. </td>
+            <td>asp.net, xml, git, c#, restful services, encryption/hashing, google api.</td>
+            
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Path detector</td>
+            <td>"Path detector" is a java-based application designed to analyze
+                 network diagrams and determine all possible paths based on user input. </td>
+            <td>java programming language, eclipse ide</td>
+        </tr>
+    </tbody>
+</table>
+
+@* <div style="position: fixed; bottom: 70px;right:25px;">
+    <a href="/AddProject" class="btn btn-success">Add new</a>
+</div> *@

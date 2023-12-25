@@ -1,0 +1,345 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.navbar {
+    background-color: #16537e; /* Dark blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+}
+
+.navbar-brand img.imageLogo {
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
+    border-radius: 50%; /* Circular logo */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; /* White text for contrast */
+    margin: 0 10px; /* Spacing between menu items */
+    transition: color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover,
+    .navbar-nav .nav-item .nav-link:focus {
+        color: #a8dadc; /* Lighter shade for hover/focus */
+    }
+
+.navbar-nav .nav-item svg {
+    margin-right: 5px; /* Space between icon and text */
+    vertical-align: middle;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Toggler icon color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml, ... "); /* Custom SVG or keep Bootstrap default */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #16537e; /* Light background for footer */
+    color: black; /* Dark text for contrast */
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+    footer a {
+        color: #16537e; /* Link color matching the header */
+    }
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #e5e6e0;
+}
+
+.textoPrincipal {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.profilePicture img.img-responsive {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.text-content {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #16537e;
+    margin-bottom: 10px;
+}
+
+.secondTitle {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+    .intro-text strong span {
+        color: #0b6e63;
+    }
+
+.menu-button {
+    transition: background-color 0.5s ease; /* 0.5 second transition for background color */
+    font-weight: bold;
+}
+
+    .menu-button:active {
+        background-color: #fc8a80; /* Change the background color when you click */
+    }
+    /* Set a transition to move the button slightly */
+    .menu-button:hover {
+        transform: translateX(5px); /* Move the 5px button to the right when hovering over it */
+        transition: transform 0.3s ease; /* Transition Duration and Smoothing Effect */
+    }
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .social-link:hover {
+        background-color: #95c6d3;
+    }
+
+.contact-details {
+    animation: slideIn 2s ease-in-out; /* Adjust the duration and effect to your preference */
+    color: #1f4a64;
+    font-weight: bold;
+    background-color: #95c6d3;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.social-link.linkedin {
+    background-color: #0077b5; /* LinkedIn's brand color */
+}
+
+    .social-link.linkedin:hover {
+        background-color: #005582;
+    }
+
+.social-link.github {
+    background-color: #333; /* GitHub's brand color */
+}
+
+    .social-link.github:hover {
+        background-color: #95c6d3;
+    }
+
+.titleIntroduction {
+    animation: slideInRight 2s ease-in-out; /* Adjust the duration and effect to your preference */
+    color: #3c8cbd;
+}
+/* Define an animation called "bounce" */
+@keyframes rebote {
+    0%, 100% {
+        transform: translateY(0); /* Start and end state (no offset) */
+    }
+
+    50% {
+        transform: translateY(-30px); /* Midpoint, Scroll Up */
+    }
+}
+
+.profilePicture img {
+    max-width: 300px;
+    height: auto; /* This maintains the original aspect ratio */
+    margin-bottom: 20px;
+    animation: rebote 1s ease-in-out 2s; /* Adjust the duration and effect to your preference */
+    border-radius: 30%; /* 50% creates a completely rounded edge */
+}
+
+.imageLogo {
+    max-width: 70px;
+    height: auto;
+    border-radius: 50%; /* border circular */
+    border: 2px solid #000000; /*  black border, 2px thick */
+    background-color: #16537e;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow: hidden; /* Ensures the border-radius applies */
+    border-radius: 8px; /* Rounded corners */
+}
+
+    .custom-table thead {
+        background-color: #16537e; /* Dark header background */
+        color: white;
+    }
+
+    .custom-table th, .custom-table td {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .custom-table th {
+        letter-spacing: 1px;
+    }
+
+    .custom-table tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .custom-table tbody tr:nth-child(even) {
+            background-color: #f5f5f5; /* Zebra-striping for rows */
+        }
+
+        .custom-table tbody tr:hover {
+            background-color: #eaeaea; /* Hover effect */
+        }
+
+    .custom-table td {
+        color: #333; /* Darker text for readability */
+    }
+
+/* Responsive table */
+@media (max-width: 600px) {
+    .custom-table thead {
+        display: none;
+    }
+
+    .custom-table, .custom-table tbody, .custom-table tr, .custom-table td {
+        display: block;
+        width: 100%;
+    }
+
+        .custom-table tr {
+            margin-bottom: 15px;
+        }
+
+        .custom-table td {
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+
+            .custom-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                text-align: center;
+                font-weight: bold;
+            }
+}
+
+/* General card styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 15px; /* Rounded corners for modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+    overflow: hidden; /* Ensure inner elements conform to border radius */
+}
+
+    .card:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover for a 'lifting' effect */
+    }
+
+/* Card image styles */
+.card-img-top {
+    width: 100%; /* Full width */
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area without stretching */
+    border-top-left-radius: 15px; /* Rounded top corners */
+    border-top-right-radius: 15px; /* Rounded top corners */
+}
+
+/* Card body styles */
+.card-body {
+    padding: 15px; /* Ample padding for spacing */
+    background: #fff; /* White background */
+}
+
+/* Card footer styles */
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: none; /* Remove border for a cleaner footer */
+    text-align: center; /* Center align the footer content */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #16537e; /* Your primary color */
+    border-color: #16537e; /* Match border color to background */
+    border-radius: 5px; /* Slightly rounded borders for the button */
+    padding: 10px 20px; /* Padding for button size */
+    transition: background-color 0.3s ease; /* Transition for smooth color change */
+}
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: #0d3b66; /* Darker shade on hover/focus */
+        border-color: #0d3b66; /* Border color to match */
+    }
