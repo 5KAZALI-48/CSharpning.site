@@ -1,11 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using static System.Formats.Asn1.AsnWriter;
-using static System.Net.Mime.MediaTypeNames;
-using System.Numerics;
-using System.Reflection.Emit;
 
-namespace CSharpning.com.WebApp.Pages
+namespace CSharpning.com.WebApp.Pages.Home
 {
     public class ProjectsModel : PageModel
     {
@@ -17,7 +12,7 @@ namespace CSharpning.com.WebApp.Pages
 
         public void OnGet()
         {
-            
+
         }
     }
 }

@@ -1,0 +1,38 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <ul class="navbar-nav me-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @User.Identity.Name
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" asp-route-returnurl="/Member/logout" asp-controller="Member" asp-action="logout">Sign Out</a></li>
+
+                @* <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> *@
+            </ul>
+        </li>
+    </ul>
+}
+else
+{
+
+    <a class="nav-link text-dark menu-button" asp-controller="Home" asp-action="SignIn">
+            <svg width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+            SignIn
+        </a>
+    
+    
+        <a class="nav-link text-dark menu-button" asp-area="" asp-page="/SignUp">
+            <svg width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+            SignOut
+        </a>
+    
+    @* <a class="btn btn-outline-success mx-1" asp-controller="Home" asp-action="SignIn">Sign In</a> *@
+    @* <a class="btn btn-outline-success" asp-controller="Home" asp-action="SignUp">Sign Up</a> *@
+
+}
