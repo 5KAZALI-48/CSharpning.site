@@ -30,7 +30,7 @@ namespace CSharpning.com.WebApp.Extentions
             }).AddPasswordValidator<PasswordValidator>()
             .AddUserValidator<UserValidator>()
               .AddDefaultTokenProviders()
-              .AddEntityFrameworkStores<AppIdentityDbContext>();
+              .AddEntityFrameworkStores<AppDbContext>();
 
         }
     }
