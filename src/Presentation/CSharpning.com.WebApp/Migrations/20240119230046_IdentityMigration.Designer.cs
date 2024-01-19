@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CSharpning.com.WebApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240119224344_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20240119230046_IdentityMigration")]
+    partial class IdentityMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

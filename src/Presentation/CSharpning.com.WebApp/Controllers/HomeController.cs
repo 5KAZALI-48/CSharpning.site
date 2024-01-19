@@ -27,7 +27,12 @@ public class HomeController : Controller
         }
         return View();
     }
-    [HttpGet]
+
+    public IActionResult SignUp()
+    {
+        return View();
+    }
+
     public IActionResult SignIn(string ReturnUrl)
     {
         TempData["ReturnUrl"] = ReturnUrl;
