@@ -4,10 +4,10 @@ namespace CSharpning.com.WebApp.ViewModels;
 
 public class SignUpViewModel
 {
-    public SignUpViewModel()
-    {
+    //public SignUpViewModel()
+    //{
 
-    }
+    //}
     public SignUpViewModel(string userName, string email, string phone, string password)
     {
         UserName = userName;
